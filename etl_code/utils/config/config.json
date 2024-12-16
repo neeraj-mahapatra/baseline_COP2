@@ -1,0 +1,86 @@
+{
+    "global_settings": {
+      "default_country": "PER",
+      "campaign_history_required": 3,
+      "campaign_window_days": 18, 
+      "time_zone": "UTC",
+      "logging_enabled": true,
+      "log_level": "INFO",
+      "random_seed": 42
+    },
+    "countries": {
+      "PER": {
+        "country_name": "Peru",
+        "currency": "PEN",
+        "active_campaigns": [202401, 202402, 202403],
+        "models": {
+          "historical_recommendation": {
+            "enabled": true,
+            "features": ["F1", "F2", "F3"],
+            "train_test_split": 0.8,
+            "min_campaigns_required": 2
+          },
+          "profiling": {
+            "enabled": true,
+            "features": ["customer_segmentation", "spend_patterns"],
+            "algorithm": "KMeans"
+          }
+        }
+      },
+      "MEX": {
+        "country_name": "Mexico",
+        "currency": "MXN",
+        "active_campaigns": [202401, 202402],
+        "models": {
+          "historical_recommendation": {
+            "enabled": true,
+            "features": ["F1", "F3"],
+            "train_test_split": 0.75,
+            "min_campaigns_required": 3
+          },
+          "profiling": {
+            "enabled": false
+          }
+        }
+      },
+      "COL": {
+        "country_name": "Colombia",
+        "currency": "COP",
+        "active_campaigns": [202401, 202403],
+        "models": {
+          "historical_recommendation": {
+            "enabled": false
+          },
+          "profiling": {
+            "enabled": true,
+            "features": ["customer_segmentation"],
+            "algorithm": "DBSCAN"
+          }
+        }
+      }
+    },
+    "model_paths": {
+      "historical_recommendation": "./models/historical_recommendation",
+      "profiling": "./models/profiling"
+    },
+    "data_paths": {
+      "raw_data": "./data/raw",
+      "processed_data": "./data/processed",
+      "campaign_data": "./data/campaigns",
+      "country_specific_data": "./data/countries"
+    },
+    "campaign_settings": {
+      "minimum_campaigns": 2,
+      "campaign_ids": {
+        "PER": ["202401", "202402", "202403"],
+        "MEX": ["202401", "202402"],
+        "COL": ["202401", "202403"]
+      },
+      "recency_threshold": 30,
+      "frequency_threshold": 5
+    },
+    "feature_flags": {
+      "enable_volume_offers": true,
+      "enable_limited_edition_priority": false
+    }
+  }
