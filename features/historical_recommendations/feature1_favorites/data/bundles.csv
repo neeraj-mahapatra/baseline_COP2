@@ -1,0 +1,47 @@
+consultant_id,product_id,product_name,category,brand,price,attributes,purchase_frequency,recency,normalized_f,normalized_r,combined_score,bundle_id,is_anchor,category_score,business_score,score
+C123,P001,Moisturizing Cream,Skincare,BrandA,25.0,Size: 200ml,5,2,1.0,0.25,0.625,C123_Bundle_1,1,,,
+C123,P005,Eye Shadow Palette,Makeup,BrandD,20.0,Shade: Multi,1,4,0.0,0.75,0.375,C123_Bundle_1,0,1.0,0.8333178698236671,0.9333271479294668
+C123,P001,Moisturizing Cream,Skincare,BrandA,25.0,Size: 200ml,5,2,1.0,0.25,0.625,C123_Bundle_2,1,,,
+C123,P005,Eye Shadow Palette,Makeup,BrandD,20.0,Shade: Multi,1,4,0.0,0.75,0.375,C123_Bundle_2,0,1.0,0.6329370804214929,0.8531748321685971
+C124,P008,Lip Balm,Makeup,BrandG,8.0,Flavor: Mint,10,4,1.0,1.0,1.0,C124_Bundle_1,1,,,
+C124,P010,Face Wash,Skincare,BrandE,15.0,Size: 200ml,8,2,1.0,0.5,0.75,C124_Bundle_1,0,1.0,0.8217123181827413,0.9286849272730965
+C124,P008,Lip Balm,Makeup,BrandG,8.0,Flavor: Mint,10,4,1.0,1.0,1.0,C124_Bundle_2,1,,,
+C124,P010,Face Wash,Skincare,BrandE,15.0,Size: 200ml,8,2,1.0,0.5,0.75,C124_Bundle_2,0,1.0,0.8017540371898694,0.9207016148759477
+C125,P015,Lip Gloss,Makeup,BrandM,12.0,Shade: Nude,9,4,1.0,0.75,0.875,C125_Bundle_1,1,,,
+C125,P012,Perfume,Beauty,BrandJ,50.0,Scent: Floral,3,1,0.0,0.0,0.0,C125_Bundle_1,0,1.0,0.6499573159927977,0.859982926397119
+C125,P015,Lip Gloss,Makeup,BrandM,12.0,Shade: Nude,9,4,1.0,0.75,0.875,C125_Bundle_2,1,,,
+C125,P012,Perfume,Beauty,BrandJ,50.0,Scent: Floral,3,1,0.0,0.0,0.0,C125_Bundle_2,0,1.0,0.846377450170203,0.9385509800680812
+C126,P016,Shaving Cream,Men's Care,BrandN,8.0,Size: 150ml,10,2,1.0,0.5,0.75,C126_Bundle_1,1,,,
+C126,P017,After Shave Balm,Men's Care,BrandO,15.0,Size: 100ml,6,1,0.0,0.0,0.0,C126_Bundle_1,0,0.0,0.14474493676717703,0.05789797470687082
+C126,P016,Shaving Cream,Men's Care,BrandN,8.0,Size: 150ml,10,2,1.0,0.5,0.75,C126_Bundle_2,1,,,
+C126,P017,After Shave Balm,Men's Care,BrandO,15.0,Size: 100ml,6,1,0.0,0.0,0.0,C126_Bundle_2,0,0.0,0.9976471402605258,0.3990588561042103
+C127,P019,Body Lotion,Skincare,BrandQ,18.0,Size: 250ml,7,5,1.0,1.0,1.0,C127_Bundle_1,1,,,
+C127,P020,Sunscreen,Skincare,BrandR,20.0,SPF: 50,5,4,0.0,0.0,0.0,C127_Bundle_1,0,0.0,0.3619331644065864,0.14477326576263458
+C127,P019,Body Lotion,Skincare,BrandQ,18.0,Size: 250ml,7,5,1.0,1.0,1.0,C127_Bundle_2,1,,,
+C127,P020,Sunscreen,Skincare,BrandR,20.0,SPF: 50,5,4,0.0,0.0,0.0,C127_Bundle_2,0,0.0,0.21003819429456816,0.08401527771782727
+C128,P021,Hydrating Toner,Skincare,BrandS,18.0,Size: 150ml,4,3,0.25,1.0,0.625,C128_Bundle_1,1,,,
+C128,P023,Liquid Eyeliner,Makeup,BrandU,14.0,Shade: Black,7,1,1.0,0.0,0.5,C128_Bundle_1,0,1.0,0.04880460120433028,0.6195218404817321
+C128,P021,Hydrating Toner,Skincare,BrandS,18.0,Size: 150ml,4,3,0.25,1.0,0.625,C128_Bundle_2,1,,,
+C128,P023,Liquid Eyeliner,Makeup,BrandU,14.0,Shade: Black,7,1,1.0,0.0,0.5,C128_Bundle_2,0,1.0,0.14144241719637785,0.6565769668785512
+C129,P026,Face Mist,Skincare,BrandX,12.0,Size: 100ml,9,3,1.0,0.3333333333333333,0.6666666666666666,C129_Bundle_1,1,,,
+C129,P025,Hair Wax,Men's Care,BrandW,15.0,Size: 75ml,8,2,1.0,0.0,0.5,C129_Bundle_1,0,1.0,0.7579309674758143,0.9031723869903258
+C129,P026,Face Mist,Skincare,BrandX,12.0,Size: 100ml,9,3,1.0,0.3333333333333333,0.6666666666666666,C129_Bundle_2,1,,,
+C129,P025,Hair Wax,Men's Care,BrandW,15.0,Size: 75ml,8,2,1.0,0.0,0.5,C129_Bundle_2,0,1.0,0.27110646484181056,0.7084425859367243
+C130,P030,Hair Conditioner,Hair Care,BrandB1,14.0,Size: 500ml,7,3,1.0,1.0,1.0,C130_Bundle_1,1,,,
+C130,P029,Massage Oil,Body Care,BrandA1,25.0,Size: 250ml,3,1,0.0,0.0,0.0,C130_Bundle_1,0,1.0,0.9741939386031934,0.9896775754412773
+C130,P030,Hair Conditioner,Hair Care,BrandB1,14.0,Size: 500ml,7,3,1.0,1.0,1.0,C130_Bundle_2,1,,,
+C130,P029,Massage Oil,Body Care,BrandA1,25.0,Size: 250ml,3,1,0.0,0.0,0.0,C130_Bundle_2,0,1.0,0.4998216852138302,0.799928674085532
+C131,P031,Shower Gel,Body Care,BrandC1,10.0,Size: 300ml,10,4,1.0,0.5,0.75,C131_Bundle_1,1,,,
+C131,P033,Blush Palette,Makeup,BrandE1,28.0,Shade: Rose,4,3,1.0,0.0,0.5,C131_Bundle_1,0,1.0,0.5768433647896156,0.8307373459158462
+C131,P031,Shower Gel,Body Care,BrandC1,10.0,Size: 300ml,10,4,1.0,0.5,0.75,C131_Bundle_2,1,,,
+C131,P032,Eau De Toilette,Beauty,BrandD1,55.0,Scent: Citrus,2,5,0.0,1.0,0.5,C131_Bundle_2,0,1.0,0.843658935002169,0.9374635740008677
+C132,P035,Hair Serum,Hair Care,BrandG1,18.0,Size: 100ml,8,1,1.0,0.0,0.5,C132_Bundle_1,1,,,
+C132,P034,Deodorant Stick,Men's Care,BrandF1,9.0,Size: 75g,6,2,1.0,0.0,0.5,C132_Bundle_1,0,1.0,0.4417155985068518,0.7766862394027407
+C132,P035,Hair Serum,Hair Care,BrandG1,18.0,Size: 100ml,8,1,1.0,0.0,0.5,C132_Bundle_2,1,,,
+C132,P034,Deodorant Stick,Men's Care,BrandF1,9.0,Size: 75g,6,2,1.0,0.0,0.5,C132_Bundle_2,0,1.0,0.8842463295479448,0.953698531819178
+C133,P038,Exfoliating Scrub,Skincare,BrandJ1,19.0,Size: 150ml,6,5,0.0,1.0,0.5,C133_Bundle_1,1,,,
+C133,P039,Shaving Foam,Men's Care,BrandK1,11.0,Size: 200ml,8,2,1.0,0.0,0.5,C133_Bundle_1,0,1.0,0.8002814629889252,0.92011258519557
+C133,P038,Exfoliating Scrub,Skincare,BrandJ1,19.0,Size: 150ml,6,5,0.0,1.0,0.5,C133_Bundle_2,1,,,
+C133,P039,Shaving Foam,Men's Care,BrandK1,11.0,Size: 200ml,8,2,1.0,0.0,0.5,C133_Bundle_2,0,1.0,0.9848840890102747,0.9939536356041099
+C134,P040,Face Primer,Makeup,BrandL1,26.0,Size: 50ml,4,1,0.0,0.0,0.0,C134_Bundle_1,1,,,
+C134,P040,Face Primer,Makeup,BrandL1,26.0,Size: 50ml,4,1,0.0,0.0,0.0,C134_Bundle_2,1,,,

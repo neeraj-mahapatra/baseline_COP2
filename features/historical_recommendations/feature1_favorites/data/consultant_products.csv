@@ -1,0 +1,41 @@
+consultant_id,product_id,product_name,category,brand,price,attributes,purchase_frequency,recency
+C123,P001,Moisturizing Cream,Skincare,BrandA,25.0,Size: 200ml,5,2
+C123,P002,Vitamin C Serum,Skincare,BrandB,30.0,Size: 50ml,3,1
+C123,P003,Matte Lipstick,Makeup,BrandC,15.0,Shade: Red,2,5
+C123,P004,Night Repair Cream,Skincare,BrandA,40.0,Size: 100ml,4,3
+C123,P005,Eye Shadow Palette,Makeup,BrandD,20.0,Shade: Multi,1,4
+C124,P006,Shampoo,Skincare,BrandE,10.0,Size: 300ml,7,1
+C124,P007,Conditioner,Skincare,BrandF,12.0,Size: 300ml,6,2
+C124,P008,Lip Balm,Makeup,BrandG,8.0,Flavor: Mint,10,4
+C124,P009,BB Cream,Makeup,BrandH,18.0,Shade: Medium,5,3
+C124,P010,Face Wash,Skincare,BrandE,15.0,Size: 200ml,8,2
+C125,P011,Hand Cream,Skincare,BrandI,22.0,Size: 150ml,4,5
+C125,P012,Perfume,Beauty,BrandJ,50.0,Scent: Floral,3,1
+C125,P013,Nail Polish,Makeup,BrandK,10.0,Color: Pink,6,2
+C125,P014,Face Scrub,Skincare,BrandL,20.0,Size: 100ml,7,3
+C125,P015,Lip Gloss,Makeup,BrandM,12.0,Shade: Nude,9,4
+C126,P016,Shaving Cream,Men's Care,BrandN,8.0,Size: 150ml,10,2
+C126,P017,After Shave Balm,Men's Care,BrandO,15.0,Size: 100ml,6,1
+C126,P018,Hair Gel,Men's Care,BrandP,12.0,Size: 200ml,8,3
+C127,P019,Body Lotion,Skincare,BrandQ,18.0,Size: 250ml,7,5
+C127,P020,Sunscreen,Skincare,BrandR,20.0,SPF: 50,5,4
+C128,P021,Hydrating Toner,Skincare,BrandS,18.0,Size: 150ml,4,3
+C128,P022,Anti-Aging Serum,Skincare,BrandT,45.0,Size: 50ml,3,2
+C128,P023,Liquid Eyeliner,Makeup,BrandU,14.0,Shade: Black,7,1
+C129,P024,Beard Oil,Men's Care,BrandV,20.0,Size: 100ml,5,4
+C129,P025,Hair Wax,Men's Care,BrandW,15.0,Size: 75ml,8,2
+C129,P026,Face Mist,Skincare,BrandX,12.0,Size: 100ml,9,3
+C129,P027,Foot Cream,Body Care,BrandY,16.0,Size: 120ml,4,5
+C130,P028,Compact Powder,Makeup,BrandZ,22.0,Shade: Beige,6,2
+C130,P029,Massage Oil,Body Care,BrandA1,25.0,Size: 250ml,3,1
+C130,P030,Hair Conditioner,Hair Care,BrandB1,14.0,Size: 500ml,7,3
+C131,P031,Shower Gel,Body Care,BrandC1,10.0,Size: 300ml,10,4
+C131,P032,Eau De Toilette,Beauty,BrandD1,55.0,Scent: Citrus,2,5
+C131,P033,Blush Palette,Makeup,BrandE1,28.0,Shade: Rose,4,3
+C132,P034,Deodorant Stick,Men's Care,BrandF1,9.0,Size: 75g,6,2
+C132,P035,Hair Serum,Hair Care,BrandG1,18.0,Size: 100ml,8,1
+C132,P036,Body Butter,Body Care,BrandH1,20.0,Size: 200ml,5,4
+C133,P037,Lip Tint,Makeup,BrandI1,16.0,Shade: Coral,7,3
+C133,P038,Exfoliating Scrub,Skincare,BrandJ1,19.0,Size: 150ml,6,5
+C133,P039,Shaving Foam,Men's Care,BrandK1,11.0,Size: 200ml,8,2
+C134,P040,Face Primer,Makeup,BrandL1,26.0,Size: 50ml,4,1
