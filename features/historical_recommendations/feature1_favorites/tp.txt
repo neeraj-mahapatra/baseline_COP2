@@ -1,0 +1,1719 @@
+Generating bundles for Consultant C123
+unique_bundle_id - C123_Bundle_1
+group -   consultant_id product_id        product_name  category   brand  price  \
+0          C123       P001  Moisturizing Cream  Skincare  BrandA   25.0   
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+2          C123       P003      Matte Lipstick    Makeup  BrandC   15.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+0   Size: 200ml                   5        2          1.00          0.25   
+1    Size: 50ml                   3        1          0.50          0.00   
+2    Shade: Red                   2        5          0.25          1.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  
+0           0.625  
+1           0.250  
+2           0.625  
+3           0.625  
+4           0.375  
+anchor_product - consultant_id                       C123
+product_id                          P001
+product_name          Moisturizing Cream
+category                        Skincare
+brand                             BrandA
+price                               25.0
+attributes                   Size: 200ml
+purchase_frequency                     5
+recency                                2
+normalized_f                         1.0
+normalized_r                        0.25
+combined_score                     0.625
+Name: 0, dtype: object
+567876567876 - bundles - [consultant_id                       C123
+product_id                          P001
+product_name          Moisturizing Cream
+category                        Skincare
+brand                             BrandA
+price                               25.0
+attributes                   Size: 200ml
+purchase_frequency                     5
+recency                                2
+normalized_f                         1.0
+normalized_r                        0.25
+combined_score                     0.625
+Name: 0, dtype: object]
+candidates yyyyy -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+2          C123       P003      Matte Lipstick    Makeup  BrandC   15.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+2    Shade: Red                   2        5          0.25          1.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  
+1           0.250  
+2           0.625  
+3           0.625  
+4           0.375  
+candidates xxxxx -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+2          C123       P003      Matte Lipstick    Makeup  BrandC   15.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+2    Shade: Red                   2        5          0.25          1.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  category_score  business_score     score  
+1           0.250               0        0.490864  0.196345  
+2           0.625               1        0.611906  0.844763  
+3           0.625               0        0.187434  0.074974  
+4           0.375               1        0.376845  0.750738  
+34343434 -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+2          C123       P003      Matte Lipstick    Makeup  BrandC   15.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+2    Shade: Red                   2        5          0.25          1.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  category_score  business_score     score  
+1           0.250               0        0.490864  0.196345  
+2           0.625               1        0.611906  0.844763  
+3           0.625               0        0.187434  0.074974  
+4           0.375               1        0.376845  0.750738  
+candidates yyyyy -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  
+1           0.250  
+3           0.625  
+4           0.375  
+candidates xxxxx -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  category_score  business_score     score  
+1           0.250               0        0.731476  0.292590  
+3           0.625               0        0.722494  0.288997  
+4           0.375               0        0.686933  0.274773  
+34343434 -   consultant_id product_id        product_name  category   brand  price  \
+1          C123       P002     Vitamin C Serum  Skincare  BrandB   30.0   
+3          C123       P004  Night Repair Cream  Skincare  BrandA   40.0   
+4          C123       P005  Eye Shadow Palette    Makeup  BrandD   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+1    Size: 50ml                   3        1          0.50          0.00   
+3   Size: 100ml                   4        3          0.75          0.50   
+4  Shade: Multi                   1        4          0.00          0.75   
+
+   combined_score  category_score  business_score     score  
+1           0.250               0        0.731476  0.292590  
+3           0.625               0        0.722494  0.288997  
+4           0.375               0        0.686933  0.274773  
+bundle - [consultant_id                       C123
+product_id                          P001
+product_name          Moisturizing Cream
+category                        Skincare
+brand                             BrandA
+price                               25.0
+attributes                   Size: 200ml
+purchase_frequency                     5
+recency                                2
+normalized_f                         1.0
+normalized_r                        0.25
+combined_score                     0.625
+Name: 0, dtype: object, consultant_id                   C123
+product_id                      P003
+product_name          Matte Lipstick
+category                      Makeup
+brand                         BrandC
+price                           15.0
+attributes                Shade: Red
+purchase_frequency                 2
+recency                            5
+normalized_f                    0.25
+normalized_r                     1.0
+combined_score                 0.625
+category_score                     1
+business_score              0.611906
+score                       0.844763
+Name: 2, dtype: object, consultant_id                    C123
+product_id                       P002
+product_name          Vitamin C Serum
+category                     Skincare
+brand                          BrandB
+price                            30.0
+attributes                 Size: 50ml
+purchase_frequency                  3
+recency                             1
+normalized_f                      0.5
+normalized_r                      0.0
+combined_score                   0.25
+category_score                      0
+business_score               0.731476
+score                         0.29259
+Name: 1, dtype: object]
+Generating bundles for Consultant C124
+unique_bundle_id - C124_Bundle_1
+group -   consultant_id product_id product_name  category   brand  price  \
+5          C124       P006      Shampoo  Skincare  BrandE   10.0   
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+7          C124       P008     Lip Balm    Makeup  BrandG    8.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+5    Size: 300ml                   7        1           0.4      0.000000   
+6    Size: 300ml                   6        2           0.2      0.333333   
+7   Flavor: Mint                  10        4           1.0      1.000000   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  
+5        0.200000  
+6        0.266667  
+7        1.000000  
+8        0.333333  
+9        0.466667  
+anchor_product - consultant_id                 C124
+product_id                    P008
+product_name              Lip Balm
+category                    Makeup
+brand                       BrandG
+price                          8.0
+attributes            Flavor: Mint
+purchase_frequency              10
+recency                          4
+normalized_f                   1.0
+normalized_r                   1.0
+combined_score                 1.0
+Name: 7, dtype: object
+567876567876 - bundles - [consultant_id                 C124
+product_id                    P008
+product_name              Lip Balm
+category                    Makeup
+brand                       BrandG
+price                          8.0
+attributes            Flavor: Mint
+purchase_frequency              10
+recency                          4
+normalized_f                   1.0
+normalized_r                   1.0
+combined_score                 1.0
+Name: 7, dtype: object]
+candidates yyyyy -   consultant_id product_id product_name  category   brand  price  \
+5          C124       P006      Shampoo  Skincare  BrandE   10.0   
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+5    Size: 300ml                   7        1           0.4      0.000000   
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  
+5        0.200000  
+6        0.266667  
+8        0.333333  
+9        0.466667  
+candidates xxxxx -   consultant_id product_id product_name  category   brand  price  \
+5          C124       P006      Shampoo  Skincare  BrandE   10.0   
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+5    Size: 300ml                   7        1           0.4      0.000000   
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  category_score  business_score     score  
+5        0.200000               1        0.987841  0.995136  
+6        0.266667               1        0.277642  0.711057  
+8        0.333333               0        0.049521  0.019808  
+9        0.466667               1        0.275422  0.710169  
+34343434 -   consultant_id product_id product_name  category   brand  price  \
+5          C124       P006      Shampoo  Skincare  BrandE   10.0   
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+5    Size: 300ml                   7        1           0.4      0.000000   
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  category_score  business_score     score  
+5        0.200000               1        0.987841  0.995136  
+6        0.266667               1        0.277642  0.711057  
+8        0.333333               0        0.049521  0.019808  
+9        0.466667               1        0.275422  0.710169  
+candidates yyyyy -   consultant_id product_id product_name  category   brand  price  \
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  
+6        0.266667  
+8        0.333333  
+9        0.466667  
+candidates xxxxx -   consultant_id product_id product_name  category   brand  price  \
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  category_score  business_score     score  
+6        0.266667               0        0.305641  0.122256  
+8        0.333333               0        0.813474  0.325390  
+9        0.466667               0        0.011553  0.004621  
+34343434 -   consultant_id product_id product_name  category   brand  price  \
+6          C124       P007  Conditioner  Skincare  BrandF   12.0   
+8          C124       P009     BB Cream    Makeup  BrandH   18.0   
+9          C124       P010    Face Wash  Skincare  BrandE   15.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+6    Size: 300ml                   6        2           0.2      0.333333   
+8  Shade: Medium                   5        3           0.0      0.666667   
+9    Size: 200ml                   8        2           0.6      0.333333   
+
+   combined_score  category_score  business_score     score  
+6        0.266667               0        0.305641  0.122256  
+8        0.333333               0        0.813474  0.325390  
+9        0.466667               0        0.011553  0.004621  
+bundle - [consultant_id                 C124
+product_id                    P008
+product_name              Lip Balm
+category                    Makeup
+brand                       BrandG
+price                          8.0
+attributes            Flavor: Mint
+purchase_frequency              10
+recency                          4
+normalized_f                   1.0
+normalized_r                   1.0
+combined_score                 1.0
+Name: 7, dtype: object, consultant_id                C124
+product_id                   P006
+product_name              Shampoo
+category                 Skincare
+brand                      BrandE
+price                        10.0
+attributes            Size: 300ml
+purchase_frequency              7
+recency                         1
+normalized_f                  0.4
+normalized_r                  0.0
+combined_score                0.2
+category_score                  1
+business_score           0.987841
+score                    0.995136
+Name: 5, dtype: object, consultant_id                  C124
+product_id                     P009
+product_name               BB Cream
+category                     Makeup
+brand                        BrandH
+price                          18.0
+attributes            Shade: Medium
+purchase_frequency                5
+recency                           3
+normalized_f                    0.0
+normalized_r               0.666667
+combined_score             0.333333
+category_score                    0
+business_score             0.813474
+score                       0.32539
+Name: 8, dtype: object]
+Generating bundles for Consultant C125
+unique_bundle_id - C125_Bundle_1
+group -    consultant_id product_id product_name  category   brand  price  \
+10          C125       P011   Hand Cream  Skincare  BrandI   22.0   
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+14          C125       P015    Lip Gloss    Makeup  BrandM   12.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+10    Size: 150ml                   4        5      0.166667          1.00   
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+14    Shade: Nude                   9        4      1.000000          0.75   
+
+    combined_score  
+10        0.583333  
+11        0.000000  
+12        0.375000  
+13        0.583333  
+14        0.875000  
+anchor_product - consultant_id                C125
+product_id                   P015
+product_name            Lip Gloss
+category                   Makeup
+brand                      BrandM
+price                        12.0
+attributes            Shade: Nude
+purchase_frequency              9
+recency                         4
+normalized_f                  1.0
+normalized_r                 0.75
+combined_score              0.875
+Name: 14, dtype: object
+567876567876 - bundles - [consultant_id                C125
+product_id                   P015
+product_name            Lip Gloss
+category                   Makeup
+brand                      BrandM
+price                        12.0
+attributes            Shade: Nude
+purchase_frequency              9
+recency                         4
+normalized_f                  1.0
+normalized_r                 0.75
+combined_score              0.875
+Name: 14, dtype: object]
+candidates yyyyy -    consultant_id product_id product_name  category   brand  price  \
+10          C125       P011   Hand Cream  Skincare  BrandI   22.0   
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+10    Size: 150ml                   4        5      0.166667          1.00   
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  
+10        0.583333  
+11        0.000000  
+12        0.375000  
+13        0.583333  
+candidates xxxxx -    consultant_id product_id product_name  category   brand  price  \
+10          C125       P011   Hand Cream  Skincare  BrandI   22.0   
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+10    Size: 150ml                   4        5      0.166667          1.00   
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  category_score  business_score     score  
+10        0.583333               1        0.931169  0.972468  
+11        0.000000               1        0.551755  0.820702  
+12        0.375000               0        0.907029  0.362812  
+13        0.583333               1        0.338034  0.735214  
+34343434 -    consultant_id product_id product_name  category   brand  price  \
+10          C125       P011   Hand Cream  Skincare  BrandI   22.0   
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+10    Size: 150ml                   4        5      0.166667          1.00   
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  category_score  business_score     score  
+10        0.583333               1        0.931169  0.972468  
+11        0.000000               1        0.551755  0.820702  
+12        0.375000               0        0.907029  0.362812  
+13        0.583333               1        0.338034  0.735214  
+candidates yyyyy -    consultant_id product_id product_name  category   brand  price  \
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  
+11        0.000000  
+12        0.375000  
+13        0.583333  
+candidates xxxxx -    consultant_id product_id product_name  category   brand  price  \
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  category_score  business_score     score  
+11        0.000000               1        0.927070  0.970828  
+12        0.375000               0        0.514297  0.205719  
+13        0.583333               0        0.143259  0.057304  
+34343434 -    consultant_id product_id product_name  category   brand  price  \
+11          C125       P012      Perfume    Beauty  BrandJ   50.0   
+12          C125       P013  Nail Polish    Makeup  BrandK   10.0   
+13          C125       P014   Face Scrub  Skincare  BrandL   20.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+11  Scent: Floral                   3        1      0.000000          0.00   
+12    Color: Pink                   6        2      0.500000          0.25   
+13    Size: 100ml                   7        3      0.666667          0.50   
+
+    combined_score  category_score  business_score     score  
+11        0.000000               1        0.927070  0.970828  
+12        0.375000               0        0.514297  0.205719  
+13        0.583333               0        0.143259  0.057304  
+bundle - [consultant_id                C125
+product_id                   P015
+product_name            Lip Gloss
+category                   Makeup
+brand                      BrandM
+price                        12.0
+attributes            Shade: Nude
+purchase_frequency              9
+recency                         4
+normalized_f                  1.0
+normalized_r                 0.75
+combined_score              0.875
+Name: 14, dtype: object, consultant_id                C125
+product_id                   P011
+product_name           Hand Cream
+category                 Skincare
+brand                      BrandI
+price                        22.0
+attributes            Size: 150ml
+purchase_frequency              4
+recency                         5
+normalized_f             0.166667
+normalized_r                  1.0
+combined_score           0.583333
+category_score                  1
+business_score           0.931169
+score                    0.972468
+Name: 10, dtype: object, consultant_id                  C125
+product_id                     P012
+product_name                Perfume
+category                     Beauty
+brand                        BrandJ
+price                          50.0
+attributes            Scent: Floral
+purchase_frequency                3
+recency                           1
+normalized_f                    0.0
+normalized_r                    0.0
+combined_score                  0.0
+category_score                    1
+business_score              0.92707
+score                      0.970828
+Name: 11, dtype: object]
+Generating bundles for Consultant C126
+unique_bundle_id - C126_Bundle_1
+group -    consultant_id product_id      product_name    category   brand  price  \
+15          C126       P016     Shaving Cream  Men's Care  BrandN    8.0   
+16          C126       P017  After Shave Balm  Men's Care  BrandO   15.0   
+17          C126       P018          Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+15  Size: 150ml                  10        2           1.0           0.5   
+16  Size: 100ml                   6        1           0.0           0.0   
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  
+15            0.75  
+16            0.00  
+17            0.75  
+anchor_product - consultant_id                  C126
+product_id                     P016
+product_name          Shaving Cream
+category                 Men's Care
+brand                        BrandN
+price                           8.0
+attributes              Size: 150ml
+purchase_frequency               10
+recency                           2
+normalized_f                    1.0
+normalized_r                    0.5
+combined_score                 0.75
+Name: 15, dtype: object
+567876567876 - bundles - [consultant_id                  C126
+product_id                     P016
+product_name          Shaving Cream
+category                 Men's Care
+brand                        BrandN
+price                           8.0
+attributes              Size: 150ml
+purchase_frequency               10
+recency                           2
+normalized_f                    1.0
+normalized_r                    0.5
+combined_score                 0.75
+Name: 15, dtype: object]
+candidates yyyyy -    consultant_id product_id      product_name    category   brand  price  \
+16          C126       P017  After Shave Balm  Men's Care  BrandO   15.0   
+17          C126       P018          Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+16  Size: 100ml                   6        1           0.0           0.0   
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  
+16            0.00  
+17            0.75  
+candidates xxxxx -    consultant_id product_id      product_name    category   brand  price  \
+16          C126       P017  After Shave Balm  Men's Care  BrandO   15.0   
+17          C126       P018          Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+16  Size: 100ml                   6        1           0.0           0.0   
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  category_score  business_score     score  
+16            0.00               0        0.961813  0.384725  
+17            0.75               0        0.137875  0.055150  
+34343434 -    consultant_id product_id      product_name    category   brand  price  \
+16          C126       P017  After Shave Balm  Men's Care  BrandO   15.0   
+17          C126       P018          Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+16  Size: 100ml                   6        1           0.0           0.0   
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  category_score  business_score     score  
+16            0.00               0        0.961813  0.384725  
+17            0.75               0        0.137875  0.055150  
+candidates yyyyy -    consultant_id product_id product_name    category   brand  price  \
+17          C126       P018     Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  
+17            0.75  
+candidates xxxxx -    consultant_id product_id product_name    category   brand  price  \
+17          C126       P018     Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  category_score  business_score     score  
+17            0.75               0        0.357878  0.143151  
+34343434 -    consultant_id product_id product_name    category   brand  price  \
+17          C126       P018     Hair Gel  Men's Care  BrandP   12.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+17  Size: 200ml                   8        3           0.5           1.0   
+
+    combined_score  category_score  business_score     score  
+17            0.75               0        0.357878  0.143151  
+bundle - [consultant_id                  C126
+product_id                     P016
+product_name          Shaving Cream
+category                 Men's Care
+brand                        BrandN
+price                           8.0
+attributes              Size: 150ml
+purchase_frequency               10
+recency                           2
+normalized_f                    1.0
+normalized_r                    0.5
+combined_score                 0.75
+Name: 15, dtype: object, consultant_id                     C126
+product_id                        P017
+product_name          After Shave Balm
+category                    Men's Care
+brand                           BrandO
+price                             15.0
+attributes                 Size: 100ml
+purchase_frequency                   6
+recency                              1
+normalized_f                       0.0
+normalized_r                       0.0
+combined_score                     0.0
+category_score                       0
+business_score                0.961813
+score                         0.384725
+Name: 16, dtype: object, consultant_id                C126
+product_id                   P018
+product_name             Hair Gel
+category               Men's Care
+brand                      BrandP
+price                        12.0
+attributes            Size: 200ml
+purchase_frequency              8
+recency                         3
+normalized_f                  0.5
+normalized_r                  1.0
+combined_score               0.75
+category_score                  0
+business_score           0.357878
+score                    0.143151
+Name: 17, dtype: object]
+Generating bundles for Consultant C127
+unique_bundle_id - C127_Bundle_1
+group -    consultant_id product_id product_name  category   brand  price  \
+18          C127       P019  Body Lotion  Skincare  BrandQ   18.0   
+19          C127       P020    Sunscreen  Skincare  BrandR   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+18  Size: 250ml                   7        5           1.0           1.0   
+19      SPF: 50                   5        4           0.0           0.0   
+
+    combined_score  
+18             1.0  
+19             0.0  
+anchor_product - consultant_id                C127
+product_id                   P019
+product_name          Body Lotion
+category                 Skincare
+brand                      BrandQ
+price                        18.0
+attributes            Size: 250ml
+purchase_frequency              7
+recency                         5
+normalized_f                  1.0
+normalized_r                  1.0
+combined_score                1.0
+Name: 18, dtype: object
+567876567876 - bundles - [consultant_id                C127
+product_id                   P019
+product_name          Body Lotion
+category                 Skincare
+brand                      BrandQ
+price                        18.0
+attributes            Size: 250ml
+purchase_frequency              7
+recency                         5
+normalized_f                  1.0
+normalized_r                  1.0
+combined_score                1.0
+Name: 18, dtype: object]
+candidates yyyyy -    consultant_id product_id product_name  category   brand  price attributes  \
+19          C127       P020    Sunscreen  Skincare  BrandR   20.0    SPF: 50   
+
+    purchase_frequency  recency  normalized_f  normalized_r  combined_score  
+19                   5        4           0.0           0.0             0.0  
+candidates xxxxx -    consultant_id product_id product_name  category   brand  price attributes  \
+19          C127       P020    Sunscreen  Skincare  BrandR   20.0    SPF: 50   
+
+    purchase_frequency  recency  normalized_f  normalized_r  combined_score  \
+19                   5        4           0.0           0.0             0.0   
+
+    category_score  business_score     score  
+19               0        0.489915  0.195966  
+34343434 -    consultant_id product_id product_name  category   brand  price attributes  \
+19          C127       P020    Sunscreen  Skincare  BrandR   20.0    SPF: 50   
+
+    purchase_frequency  recency  normalized_f  normalized_r  combined_score  \
+19                   5        4           0.0           0.0             0.0   
+
+    category_score  business_score     score  
+19               0        0.489915  0.195966  
+candidates yyyyy - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score]
+Index: []
+candidates xxxxx - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score, category_score, business_score, score]
+Index: []
+34343434 - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score, category_score, business_score, score]
+Index: []
+bundle - [consultant_id                C127
+product_id                   P019
+product_name          Body Lotion
+category                 Skincare
+brand                      BrandQ
+price                        18.0
+attributes            Size: 250ml
+purchase_frequency              7
+recency                         5
+normalized_f                  1.0
+normalized_r                  1.0
+combined_score                1.0
+Name: 18, dtype: object, consultant_id              C127
+product_id                 P020
+product_name          Sunscreen
+category               Skincare
+brand                    BrandR
+price                      20.0
+attributes              SPF: 50
+purchase_frequency            5
+recency                       4
+normalized_f                0.0
+normalized_r                0.0
+combined_score              0.0
+category_score                0
+business_score         0.489915
+score                  0.195966
+Name: 19, dtype: object]
+Generating bundles for Consultant C128
+unique_bundle_id - C128_Bundle_1
+group -    consultant_id product_id      product_name  category   brand  price  \
+20          C128       P021   Hydrating Toner  Skincare  BrandS   18.0   
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+22          C128       P023   Liquid Eyeliner    Makeup  BrandU   14.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+20   Size: 150ml                   4        3          0.25           1.0   
+21    Size: 50ml                   3        2          0.00           0.5   
+22  Shade: Black                   7        1          1.00           0.0   
+
+    combined_score  
+20           0.625  
+21           0.250  
+22           0.500  
+anchor_product - consultant_id                    C128
+product_id                       P021
+product_name          Hydrating Toner
+category                     Skincare
+brand                          BrandS
+price                            18.0
+attributes                Size: 150ml
+purchase_frequency                  4
+recency                             3
+normalized_f                     0.25
+normalized_r                      1.0
+combined_score                  0.625
+Name: 20, dtype: object
+567876567876 - bundles - [consultant_id                    C128
+product_id                       P021
+product_name          Hydrating Toner
+category                     Skincare
+brand                          BrandS
+price                            18.0
+attributes                Size: 150ml
+purchase_frequency                  4
+recency                             3
+normalized_f                     0.25
+normalized_r                      1.0
+combined_score                  0.625
+Name: 20, dtype: object]
+candidates yyyyy -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+22          C128       P023   Liquid Eyeliner    Makeup  BrandU   14.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21    Size: 50ml                   3        2           0.0           0.5   
+22  Shade: Black                   7        1           1.0           0.0   
+
+    combined_score  
+21            0.25  
+22            0.50  
+candidates xxxxx -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+22          C128       P023   Liquid Eyeliner    Makeup  BrandU   14.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21    Size: 50ml                   3        2           0.0           0.5   
+22  Shade: Black                   7        1           1.0           0.0   
+
+    combined_score  category_score  business_score     score  
+21            0.25               0        0.301180  0.120472  
+22            0.50               1        0.432899  0.773160  
+34343434 -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+22          C128       P023   Liquid Eyeliner    Makeup  BrandU   14.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21    Size: 50ml                   3        2           0.0           0.5   
+22  Shade: Black                   7        1           1.0           0.0   
+
+    combined_score  category_score  business_score     score  
+21            0.25               0        0.301180  0.120472  
+22            0.50               1        0.432899  0.773160  
+candidates yyyyy -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+
+    attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21  Size: 50ml                   3        2           0.0           0.5   
+
+    combined_score  
+21            0.25  
+candidates xxxxx -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+
+    attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21  Size: 50ml                   3        2           0.0           0.5   
+
+    combined_score  category_score  business_score    score  
+21            0.25               0        0.820575  0.32823  
+34343434 -    consultant_id product_id      product_name  category   brand  price  \
+21          C128       P022  Anti-Aging Serum  Skincare  BrandT   45.0   
+
+    attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+21  Size: 50ml                   3        2           0.0           0.5   
+
+    combined_score  category_score  business_score    score  
+21            0.25               0        0.820575  0.32823  
+bundle - [consultant_id                    C128
+product_id                       P021
+product_name          Hydrating Toner
+category                     Skincare
+brand                          BrandS
+price                            18.0
+attributes                Size: 150ml
+purchase_frequency                  4
+recency                             3
+normalized_f                     0.25
+normalized_r                      1.0
+combined_score                  0.625
+Name: 20, dtype: object, consultant_id                    C128
+product_id                       P023
+product_name          Liquid Eyeliner
+category                       Makeup
+brand                          BrandU
+price                            14.0
+attributes               Shade: Black
+purchase_frequency                  7
+recency                             1
+normalized_f                      1.0
+normalized_r                      0.0
+combined_score                    0.5
+category_score                      1
+business_score               0.432899
+score                         0.77316
+Name: 22, dtype: object, consultant_id                     C128
+product_id                        P022
+product_name          Anti-Aging Serum
+category                      Skincare
+brand                           BrandT
+price                             45.0
+attributes                  Size: 50ml
+purchase_frequency                   3
+recency                              2
+normalized_f                       0.0
+normalized_r                       0.5
+combined_score                    0.25
+category_score                       0
+business_score                0.820575
+score                          0.32823
+Name: 21, dtype: object]
+Generating bundles for Consultant C129
+unique_bundle_id - C129_Bundle_1
+group -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+25          C129       P026    Face Mist    Skincare  BrandX   12.0   
+26          C129       P027   Foot Cream   Body Care  BrandY   16.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+25  Size: 100ml                   9        3           1.0      0.333333   
+26  Size: 120ml                   4        5           0.0      1.000000   
+
+    combined_score  
+23        0.433333  
+24        0.400000  
+25        0.666667  
+26        0.500000  
+anchor_product - consultant_id                C129
+product_id                   P026
+product_name            Face Mist
+category                 Skincare
+brand                      BrandX
+price                        12.0
+attributes            Size: 100ml
+purchase_frequency              9
+recency                         3
+normalized_f                  1.0
+normalized_r             0.333333
+combined_score           0.666667
+Name: 25, dtype: object
+567876567876 - bundles - [consultant_id                C129
+product_id                   P026
+product_name            Face Mist
+category                 Skincare
+brand                      BrandX
+price                        12.0
+attributes            Size: 100ml
+purchase_frequency              9
+recency                         3
+normalized_f                  1.0
+normalized_r             0.333333
+combined_score           0.666667
+Name: 25, dtype: object]
+candidates yyyyy -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+26          C129       P027   Foot Cream   Body Care  BrandY   16.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+26  Size: 120ml                   4        5           0.0      1.000000   
+
+    combined_score  
+23        0.433333  
+24        0.400000  
+26        0.500000  
+candidates xxxxx -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+26          C129       P027   Foot Cream   Body Care  BrandY   16.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+26  Size: 120ml                   4        5           0.0      1.000000   
+
+    combined_score  category_score  business_score     score  
+23        0.433333               1        0.250594  0.700238  
+24        0.400000               1        0.175129  0.670052  
+26        0.500000               1        0.308535  0.723414  
+34343434 -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+26          C129       P027   Foot Cream   Body Care  BrandY   16.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+26  Size: 120ml                   4        5           0.0      1.000000   
+
+    combined_score  category_score  business_score     score  
+23        0.433333               1        0.250594  0.700238  
+24        0.400000               1        0.175129  0.670052  
+26        0.500000               1        0.308535  0.723414  
+candidates yyyyy -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+
+    combined_score  
+23        0.433333  
+24        0.400000  
+candidates xxxxx -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+
+    combined_score  category_score  business_score     score  
+23        0.433333               1        0.378313  0.751325  
+24        0.400000               1        0.585757  0.834303  
+34343434 -    consultant_id product_id product_name    category   brand  price  \
+23          C129       P024    Beard Oil  Men's Care  BrandV   20.0   
+24          C129       P025     Hair Wax  Men's Care  BrandW   15.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+23  Size: 100ml                   5        4           0.2      0.666667   
+24   Size: 75ml                   8        2           0.8      0.000000   
+
+    combined_score  category_score  business_score     score  
+23        0.433333               1        0.378313  0.751325  
+24        0.400000               1        0.585757  0.834303  
+bundle - [consultant_id                C129
+product_id                   P026
+product_name            Face Mist
+category                 Skincare
+brand                      BrandX
+price                        12.0
+attributes            Size: 100ml
+purchase_frequency              9
+recency                         3
+normalized_f                  1.0
+normalized_r             0.333333
+combined_score           0.666667
+Name: 25, dtype: object, consultant_id                C129
+product_id                   P027
+product_name           Foot Cream
+category                Body Care
+brand                      BrandY
+price                        16.0
+attributes            Size: 120ml
+purchase_frequency              4
+recency                         5
+normalized_f                  0.0
+normalized_r                  1.0
+combined_score                0.5
+category_score                  1
+business_score           0.308535
+score                    0.723414
+Name: 26, dtype: object, consultant_id               C129
+product_id                  P025
+product_name            Hair Wax
+category              Men's Care
+brand                     BrandW
+price                       15.0
+attributes            Size: 75ml
+purchase_frequency             8
+recency                        2
+normalized_f                 0.8
+normalized_r                 0.0
+combined_score               0.4
+category_score                 1
+business_score          0.585757
+score                   0.834303
+Name: 24, dtype: object]
+Generating bundles for Consultant C130
+unique_bundle_id - C130_Bundle_1
+group -    consultant_id product_id      product_name   category    brand  price  \
+27          C130       P028    Compact Powder     Makeup   BrandZ   22.0   
+28          C130       P029       Massage Oil  Body Care  BrandA1   25.0   
+29          C130       P030  Hair Conditioner  Hair Care  BrandB1   14.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+27  Shade: Beige                   6        2          0.75           0.5   
+28   Size: 250ml                   3        1          0.00           0.0   
+29   Size: 500ml                   7        3          1.00           1.0   
+
+    combined_score  
+27           0.625  
+28           0.000  
+29           1.000  
+anchor_product - consultant_id                     C130
+product_id                        P030
+product_name          Hair Conditioner
+category                     Hair Care
+brand                          BrandB1
+price                             14.0
+attributes                 Size: 500ml
+purchase_frequency                   7
+recency                              3
+normalized_f                       1.0
+normalized_r                       1.0
+combined_score                     1.0
+Name: 29, dtype: object
+567876567876 - bundles - [consultant_id                     C130
+product_id                        P030
+product_name          Hair Conditioner
+category                     Hair Care
+brand                          BrandB1
+price                             14.0
+attributes                 Size: 500ml
+purchase_frequency                   7
+recency                              3
+normalized_f                       1.0
+normalized_r                       1.0
+combined_score                     1.0
+Name: 29, dtype: object]
+candidates yyyyy -    consultant_id product_id    product_name   category    brand  price  \
+27          C130       P028  Compact Powder     Makeup   BrandZ   22.0   
+28          C130       P029     Massage Oil  Body Care  BrandA1   25.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+27  Shade: Beige                   6        2          0.75           0.5   
+28   Size: 250ml                   3        1          0.00           0.0   
+
+    combined_score  
+27           0.625  
+28           0.000  
+candidates xxxxx -    consultant_id product_id    product_name   category    brand  price  \
+27          C130       P028  Compact Powder     Makeup   BrandZ   22.0   
+28          C130       P029     Massage Oil  Body Care  BrandA1   25.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+27  Shade: Beige                   6        2          0.75           0.5   
+28   Size: 250ml                   3        1          0.00           0.0   
+
+    combined_score  category_score  business_score     score  
+27           0.625               1        0.841566  0.936626  
+28           0.000               1        0.012796  0.605118  
+34343434 -    consultant_id product_id    product_name   category    brand  price  \
+27          C130       P028  Compact Powder     Makeup   BrandZ   22.0   
+28          C130       P029     Massage Oil  Body Care  BrandA1   25.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+27  Shade: Beige                   6        2          0.75           0.5   
+28   Size: 250ml                   3        1          0.00           0.0   
+
+    combined_score  category_score  business_score     score  
+27           0.625               1        0.841566  0.936626  
+28           0.000               1        0.012796  0.605118  
+candidates yyyyy -    consultant_id product_id product_name   category    brand  price  \
+28          C130       P029  Massage Oil  Body Care  BrandA1   25.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+28  Size: 250ml                   3        1           0.0           0.0   
+
+    combined_score  
+28             0.0  
+candidates xxxxx -    consultant_id product_id product_name   category    brand  price  \
+28          C130       P029  Massage Oil  Body Care  BrandA1   25.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+28  Size: 250ml                   3        1           0.0           0.0   
+
+    combined_score  category_score  business_score    score  
+28             0.0               1        0.971675  0.98867  
+34343434 -    consultant_id product_id product_name   category    brand  price  \
+28          C130       P029  Massage Oil  Body Care  BrandA1   25.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+28  Size: 250ml                   3        1           0.0           0.0   
+
+    combined_score  category_score  business_score    score  
+28             0.0               1        0.971675  0.98867  
+bundle - [consultant_id                     C130
+product_id                        P030
+product_name          Hair Conditioner
+category                     Hair Care
+brand                          BrandB1
+price                             14.0
+attributes                 Size: 500ml
+purchase_frequency                   7
+recency                              3
+normalized_f                       1.0
+normalized_r                       1.0
+combined_score                     1.0
+Name: 29, dtype: object, consultant_id                   C130
+product_id                      P028
+product_name          Compact Powder
+category                      Makeup
+brand                         BrandZ
+price                           22.0
+attributes              Shade: Beige
+purchase_frequency                 6
+recency                            2
+normalized_f                    0.75
+normalized_r                     0.5
+combined_score                 0.625
+category_score                     1
+business_score              0.841566
+score                       0.936626
+Name: 27, dtype: object, consultant_id                C130
+product_id                   P029
+product_name          Massage Oil
+category                Body Care
+brand                     BrandA1
+price                        25.0
+attributes            Size: 250ml
+purchase_frequency              3
+recency                         1
+normalized_f                  0.0
+normalized_r                  0.0
+combined_score                0.0
+category_score                  1
+business_score           0.971675
+score                     0.98867
+Name: 28, dtype: object]
+Generating bundles for Consultant C131
+unique_bundle_id - C131_Bundle_1
+group -    consultant_id product_id     product_name   category    brand  price  \
+30          C131       P031       Shower Gel  Body Care  BrandC1   10.0   
+31          C131       P032  Eau De Toilette     Beauty  BrandD1   55.0   
+32          C131       P033    Blush Palette     Makeup  BrandE1   28.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+30    Size: 300ml                  10        4          1.00           0.5   
+31  Scent: Citrus                   2        5          0.00           1.0   
+32    Shade: Rose                   4        3          0.25           0.0   
+
+    combined_score  
+30           0.750  
+31           0.500  
+32           0.125  
+anchor_product - consultant_id                C131
+product_id                   P031
+product_name           Shower Gel
+category                Body Care
+brand                     BrandC1
+price                        10.0
+attributes            Size: 300ml
+purchase_frequency             10
+recency                         4
+normalized_f                  1.0
+normalized_r                  0.5
+combined_score               0.75
+Name: 30, dtype: object
+567876567876 - bundles - [consultant_id                C131
+product_id                   P031
+product_name           Shower Gel
+category                Body Care
+brand                     BrandC1
+price                        10.0
+attributes            Size: 300ml
+purchase_frequency             10
+recency                         4
+normalized_f                  1.0
+normalized_r                  0.5
+combined_score               0.75
+Name: 30, dtype: object]
+candidates yyyyy -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+32          C131       P033    Blush Palette   Makeup  BrandE1   28.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5          0.00           1.0   
+32    Shade: Rose                   4        3          0.25           0.0   
+
+    combined_score  
+31           0.500  
+32           0.125  
+candidates xxxxx -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+32          C131       P033    Blush Palette   Makeup  BrandE1   28.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5          0.00           1.0   
+32    Shade: Rose                   4        3          0.25           0.0   
+
+    combined_score  category_score  business_score     score  
+31           0.500               1        0.694709  0.877883  
+32           0.125               1        0.720707  0.888283  
+34343434 -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+32          C131       P033    Blush Palette   Makeup  BrandE1   28.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5          0.00           1.0   
+32    Shade: Rose                   4        3          0.25           0.0   
+
+    combined_score  category_score  business_score     score  
+31           0.500               1        0.694709  0.877883  
+32           0.125               1        0.720707  0.888283  
+candidates yyyyy -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5           0.0           1.0   
+
+    combined_score  
+31             0.5  
+candidates xxxxx -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5           0.0           1.0   
+
+    combined_score  category_score  business_score     score  
+31             0.5               1        0.800983  0.920393  
+34343434 -    consultant_id product_id     product_name category    brand  price  \
+31          C131       P032  Eau De Toilette   Beauty  BrandD1   55.0   
+
+       attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+31  Scent: Citrus                   2        5           0.0           1.0   
+
+    combined_score  category_score  business_score     score  
+31             0.5               1        0.800983  0.920393  
+bundle - [consultant_id                C131
+product_id                   P031
+product_name           Shower Gel
+category                Body Care
+brand                     BrandC1
+price                        10.0
+attributes            Size: 300ml
+purchase_frequency             10
+recency                         4
+normalized_f                  1.0
+normalized_r                  0.5
+combined_score               0.75
+Name: 30, dtype: object, consultant_id                  C131
+product_id                     P033
+product_name          Blush Palette
+category                     Makeup
+brand                       BrandE1
+price                          28.0
+attributes              Shade: Rose
+purchase_frequency                4
+recency                           3
+normalized_f                   0.25
+normalized_r                    0.0
+combined_score                0.125
+category_score                    1
+business_score             0.720707
+score                      0.888283
+Name: 32, dtype: object, consultant_id                    C131
+product_id                       P032
+product_name          Eau De Toilette
+category                       Beauty
+brand                         BrandD1
+price                            55.0
+attributes              Scent: Citrus
+purchase_frequency                  2
+recency                             5
+normalized_f                      0.0
+normalized_r                      1.0
+combined_score                    0.5
+category_score                      1
+business_score               0.800983
+score                        0.920393
+Name: 31, dtype: object]
+Generating bundles for Consultant C132
+unique_bundle_id - C132_Bundle_1
+group -    consultant_id product_id     product_name    category    brand  price  \
+33          C132       P034  Deodorant Stick  Men's Care  BrandF1    9.0   
+34          C132       P035       Hair Serum   Hair Care  BrandG1   18.0   
+35          C132       P036      Body Butter   Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+33    Size: 75g                   6        2      0.333333      0.333333   
+34  Size: 100ml                   8        1      1.000000      0.000000   
+35  Size: 200ml                   5        4      0.000000      1.000000   
+
+    combined_score  
+33        0.333333  
+34        0.500000  
+35        0.500000  
+anchor_product - consultant_id                C132
+product_id                   P035
+product_name           Hair Serum
+category                Hair Care
+brand                     BrandG1
+price                        18.0
+attributes            Size: 100ml
+purchase_frequency              8
+recency                         1
+normalized_f                  1.0
+normalized_r                  0.0
+combined_score                0.5
+Name: 34, dtype: object
+567876567876 - bundles - [consultant_id                C132
+product_id                   P035
+product_name           Hair Serum
+category                Hair Care
+brand                     BrandG1
+price                        18.0
+attributes            Size: 100ml
+purchase_frequency              8
+recency                         1
+normalized_f                  1.0
+normalized_r                  0.0
+combined_score                0.5
+Name: 34, dtype: object]
+candidates yyyyy -    consultant_id product_id     product_name    category    brand  price  \
+33          C132       P034  Deodorant Stick  Men's Care  BrandF1    9.0   
+35          C132       P036      Body Butter   Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+33    Size: 75g                   6        2      0.333333      0.333333   
+35  Size: 200ml                   5        4      0.000000      1.000000   
+
+    combined_score  
+33        0.333333  
+35        0.500000  
+candidates xxxxx -    consultant_id product_id     product_name    category    brand  price  \
+33          C132       P034  Deodorant Stick  Men's Care  BrandF1    9.0   
+35          C132       P036      Body Butter   Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+33    Size: 75g                   6        2      0.333333      0.333333   
+35  Size: 200ml                   5        4      0.000000      1.000000   
+
+    combined_score  category_score  business_score     score  
+33        0.333333               1        0.864910  0.945964  
+35        0.500000               1        0.270965  0.708386  
+34343434 -    consultant_id product_id     product_name    category    brand  price  \
+33          C132       P034  Deodorant Stick  Men's Care  BrandF1    9.0   
+35          C132       P036      Body Butter   Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+33    Size: 75g                   6        2      0.333333      0.333333   
+35  Size: 200ml                   5        4      0.000000      1.000000   
+
+    combined_score  category_score  business_score     score  
+33        0.333333               1        0.864910  0.945964  
+35        0.500000               1        0.270965  0.708386  
+candidates yyyyy -    consultant_id product_id product_name   category    brand  price  \
+35          C132       P036  Body Butter  Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+35  Size: 200ml                   5        4           0.0           1.0   
+
+    combined_score  
+35             0.5  
+candidates xxxxx -    consultant_id product_id product_name   category    brand  price  \
+35          C132       P036  Body Butter  Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+35  Size: 200ml                   5        4           0.0           1.0   
+
+    combined_score  category_score  business_score     score  
+35             0.5               1        0.244759  0.697904  
+34343434 -    consultant_id product_id product_name   category    brand  price  \
+35          C132       P036  Body Butter  Body Care  BrandH1   20.0   
+
+     attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+35  Size: 200ml                   5        4           0.0           1.0   
+
+    combined_score  category_score  business_score     score  
+35             0.5               1        0.244759  0.697904  
+bundle - [consultant_id                C132
+product_id                   P035
+product_name           Hair Serum
+category                Hair Care
+brand                     BrandG1
+price                        18.0
+attributes            Size: 100ml
+purchase_frequency              8
+recency                         1
+normalized_f                  1.0
+normalized_r                  0.0
+combined_score                0.5
+Name: 34, dtype: object, consultant_id                    C132
+product_id                       P034
+product_name          Deodorant Stick
+category                   Men's Care
+brand                         BrandF1
+price                             9.0
+attributes                  Size: 75g
+purchase_frequency                  6
+recency                             2
+normalized_f                 0.333333
+normalized_r                 0.333333
+combined_score               0.333333
+category_score                      1
+business_score                0.86491
+score                        0.945964
+Name: 33, dtype: object, consultant_id                C132
+product_id                   P036
+product_name          Body Butter
+category                Body Care
+brand                     BrandH1
+price                        20.0
+attributes            Size: 200ml
+purchase_frequency              5
+recency                         4
+normalized_f                  0.0
+normalized_r                  1.0
+combined_score                0.5
+category_score                  1
+business_score           0.244759
+score                    0.697904
+Name: 35, dtype: object]
+Generating bundles for Consultant C133
+unique_bundle_id - C133_Bundle_1
+group -    consultant_id product_id       product_name    category    brand  price  \
+36          C133       P037           Lip Tint      Makeup  BrandI1   16.0   
+37          C133       P038  Exfoliating Scrub    Skincare  BrandJ1   19.0   
+38          C133       P039       Shaving Foam  Men's Care  BrandK1   11.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+37   Size: 150ml                   6        5           0.0      1.000000   
+38   Size: 200ml                   8        2           1.0      0.000000   
+
+    combined_score  
+36        0.416667  
+37        0.500000  
+38        0.500000  
+anchor_product - consultant_id                      C133
+product_id                         P038
+product_name          Exfoliating Scrub
+category                       Skincare
+brand                           BrandJ1
+price                              19.0
+attributes                  Size: 150ml
+purchase_frequency                    6
+recency                               5
+normalized_f                        0.0
+normalized_r                        1.0
+combined_score                      0.5
+Name: 37, dtype: object
+567876567876 - bundles - [consultant_id                      C133
+product_id                         P038
+product_name          Exfoliating Scrub
+category                       Skincare
+brand                           BrandJ1
+price                              19.0
+attributes                  Size: 150ml
+purchase_frequency                    6
+recency                               5
+normalized_f                        0.0
+normalized_r                        1.0
+combined_score                      0.5
+Name: 37, dtype: object]
+candidates yyyyy -    consultant_id product_id  product_name    category    brand  price  \
+36          C133       P037      Lip Tint      Makeup  BrandI1   16.0   
+38          C133       P039  Shaving Foam  Men's Care  BrandK1   11.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+38   Size: 200ml                   8        2           1.0      0.000000   
+
+    combined_score  
+36        0.416667  
+38        0.500000  
+candidates xxxxx -    consultant_id product_id  product_name    category    brand  price  \
+36          C133       P037      Lip Tint      Makeup  BrandI1   16.0   
+38          C133       P039  Shaving Foam  Men's Care  BrandK1   11.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+38   Size: 200ml                   8        2           1.0      0.000000   
+
+    combined_score  category_score  business_score     score  
+36        0.416667               1        0.476803  0.790721  
+38        0.500000               1        0.554260  0.821704  
+34343434 -    consultant_id product_id  product_name    category    brand  price  \
+36          C133       P037      Lip Tint      Makeup  BrandI1   16.0   
+38          C133       P039  Shaving Foam  Men's Care  BrandK1   11.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+38   Size: 200ml                   8        2           1.0      0.000000   
+
+    combined_score  category_score  business_score     score  
+36        0.416667               1        0.476803  0.790721  
+38        0.500000               1        0.554260  0.821704  
+candidates yyyyy -    consultant_id product_id product_name category    brand  price  \
+36          C133       P037     Lip Tint   Makeup  BrandI1   16.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+
+    combined_score  
+36        0.416667  
+candidates xxxxx -    consultant_id product_id product_name category    brand  price  \
+36          C133       P037     Lip Tint   Makeup  BrandI1   16.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+
+    combined_score  category_score  business_score    score  
+36        0.416667               1        0.088101  0.63524  
+34343434 -    consultant_id product_id product_name category    brand  price  \
+36          C133       P037     Lip Tint   Makeup  BrandI1   16.0   
+
+      attributes  purchase_frequency  recency  normalized_f  normalized_r  \
+36  Shade: Coral                   7        3           0.5      0.333333   
+
+    combined_score  category_score  business_score    score  
+36        0.416667               1        0.088101  0.63524  
+bundle - [consultant_id                      C133
+product_id                         P038
+product_name          Exfoliating Scrub
+category                       Skincare
+brand                           BrandJ1
+price                              19.0
+attributes                  Size: 150ml
+purchase_frequency                    6
+recency                               5
+normalized_f                        0.0
+normalized_r                        1.0
+combined_score                      0.5
+Name: 37, dtype: object, consultant_id                 C133
+product_id                    P039
+product_name          Shaving Foam
+category                Men's Care
+brand                      BrandK1
+price                         11.0
+attributes             Size: 200ml
+purchase_frequency               8
+recency                          2
+normalized_f                   1.0
+normalized_r                   0.0
+combined_score                 0.5
+category_score                   1
+business_score             0.55426
+score                     0.821704
+Name: 38, dtype: object, consultant_id                 C133
+product_id                    P037
+product_name              Lip Tint
+category                    Makeup
+brand                      BrandI1
+price                         16.0
+attributes            Shade: Coral
+purchase_frequency               7
+recency                          3
+normalized_f                   0.5
+normalized_r              0.333333
+combined_score            0.416667
+category_score                   1
+business_score            0.088101
+score                      0.63524
+Name: 36, dtype: object]
+Generating bundles for Consultant C134
+unique_bundle_id - C134_Bundle_1
+group -    consultant_id product_id product_name category    brand  price  attributes  \
+39          C134       P040  Face Primer   Makeup  BrandL1   26.0  Size: 50ml   
+
+    purchase_frequency  recency  normalized_f  normalized_r  combined_score  
+39                   4        1             0             0             0.0  
+anchor_product - consultant_id                C134
+product_id                   P040
+product_name          Face Primer
+category                   Makeup
+brand                     BrandL1
+price                        26.0
+attributes             Size: 50ml
+purchase_frequency              4
+recency                         1
+normalized_f                    0
+normalized_r                    0
+combined_score                0.0
+Name: 39, dtype: object
+567876567876 - bundles - [consultant_id                C134
+product_id                   P040
+product_name          Face Primer
+category                   Makeup
+brand                     BrandL1
+price                        26.0
+attributes             Size: 50ml
+purchase_frequency              4
+recency                         1
+normalized_f                    0
+normalized_r                    0
+combined_score                0.0
+Name: 39, dtype: object]
+candidates yyyyy - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score]
+Index: []
+candidates xxxxx - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score, category_score, business_score, score]
+Index: []
+34343434 - Empty DataFrame
+Columns: [consultant_id, product_id, product_name, category, brand, price, attributes, purchase_frequency, recency, normalized_f, normalized_r, combined_score, category_score, business_score, score]
+Index: []
+bundle - [consultant_id                C134
+product_id                   P040
+product_name          Face Primer
+category                   Makeup
+brand                     BrandL1
+price                        26.0
+attributes             Size: 50ml
+purchase_frequency              4
+recency                         1
+normalized_f                    0
+normalized_r                    0
+combined_score                0.0
+Name: 39, dtype: object]
