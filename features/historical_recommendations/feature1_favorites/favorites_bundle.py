@@ -111,11 +111,13 @@ def build_bundle(df, anchor_product, purchasing_power, alpha, beta, k, C_max, th
     while len(bundle) < k:  # Ensure we don't exceed the desired bundle size 'k'
         # Generate candidate products, allowing for multiple categories
         candidates = generate_candidates(bundle, df, n_categories)
-        
-        # Calculate combined score for the candidates
-        candidates = calculate_combined_score(candidates, alpha, beta)
+        print(f"\n qqqqqqqq - {candidates} \n qqqqqq")
+        # # Calculate combined score for the candidates
+        # candidates = calculate_combined_score(candidates, alpha, beta)
+        # print(f"\n uuuuuuu - {candidates} \n uuuuuu")
         candidates = score_candidates(candidates, bundle, gamma, delta)
-        
+        print(f"\n yyyyyy - {candidates} \n yyyyyy")
+
         # Filter candidates based on price constraint
         candidates = candidates[candidates['price'] <= theta * C_max]
         
