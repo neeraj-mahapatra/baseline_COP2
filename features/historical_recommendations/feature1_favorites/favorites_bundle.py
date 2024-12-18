@@ -11,8 +11,8 @@ gamma = 0.6
 delta = 0.4  
 n_categories = 2  
 num_bundles = 2
-input_csv = "/Users/mindstix/Documents/baseline_COP2/features/historical_recommendations/feature1_favorites/data/consultant_products.csv"  
-output_csv = "/Users/mindstix/Documents/baseline_COP2/features/historical_recommendations/feature1_favorites/data/bundles.csv"  
+input_csv = "C:/Users/athar/Documents/GitHub/baseline_COP2/features/historical_recommendations/feature1_favorites/data/F1_test.csv"  
+output_csv = "C:/Users/athar/Documents/GitHub/baseline_COP2/features/historical_recommendations/feature1_favorites/data/bundles.csv"  
 
 def read_data_from_csv(csv_path):
     """Read product data from CSV."""
