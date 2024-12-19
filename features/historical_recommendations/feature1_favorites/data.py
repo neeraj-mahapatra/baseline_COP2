@@ -1,8 +1,9 @@
 import pandas as pd 
 import numpy as np
+from datetime import datetime
 
-def process_csv(file_path, column_rename_map, column_to_replace=None, replacement_value=None, group_by_columns=None, frequency_column_name="purchase_frequency", random_column_name="recency", save_path=None):
-    try: 
+def process_csv(file_path, column_rename_map, column_to_replace=None, replacement_value=None, group_by_columns=None, frequency_column_name="purchase_frequency", transaction_date_column = None, recncy_column_name="recency", save_path=None):
+    try:    
         df = pd.read_csv(file_path)
         print("\nOriginal Columns:")
         print(df.columns.tolist())
@@ -25,8 +26,18 @@ def process_csv(file_path, column_rename_map, column_to_replace=None, replacemen
             else:
                 print(f"One or more columns in {group_by_columns} do not exist in the DataFrame.")
     
-        # Add a new column with random values between 1 and 9
-        df[random_column_name] = np.random.randint(1, 10, size=len(df))
+        # Add a new column for recency
+        
+        if transaction_date_column and transaction_date_column in df.columns:
+            # Convert transaction_date_column to datetime
+            df[transaction_date_column] = pd.to_datetime(df[transaction_date_column], errors="coerce")
+
+            # Calculate recency (days since the transaction date)
+            current_date = datetime.now()
+            df[recncy_column_name] = (current_date - df[transaction_date_column]).dt.days
+        else:
+            print(f"\nTransaction date column '{transaction_date_column}' not found in the DataFrame.")
+
 
         if save_path is None:
             save_path = "F1_test.csv"
@@ -43,7 +54,7 @@ def process_csv(file_path, column_rename_map, column_to_replace=None, replacemen
 
 if __name__ == "__main__":
     # Provide the path to your CSV file
-    input_file = "C:/Users/athar/Documents/GitHub/baseline_COP2/features/historical_recommendations/feature1_favorites/data/F1_sample_data_1000_consultora.csv" 
+    input_file = "C:/Users/athar/Documents/GitHub/baseline_COP2/features/historical_recommendations/feature1_favorites/data/F1_sample_data_1000_consultora_with_date.csv" 
 
 
     column_mapping = {
@@ -51,7 +62,8 @@ if __name__ == "__main__":
         "CODPRODUCTOSAP": "product_id",
         "DESCATEGORIA": "category", 
         "DESMARCA": "brand", 
-        "PRECIONORMALMN": "price"
+        "PRECIONORMALMN": "price",
+        "FECHAPROCESO" : "date"
     }
 
     # Define the column and replacement value for nulls or other values
@@ -62,4 +74,4 @@ if __name__ == "__main__":
 
     save_file = "C:/Users/athar/Documents/GitHub/baseline_COP2/features/historical_recommendations/feature1_favorites/data/F1_test.csv"
     # Process the file
-    process_csv(input_file, column_mapping, column_to_replace, replacement_value, group_by, "purchase_frequency", "recency", save_file)
+    process_csv(input_file, column_mapping, column_to_replace, replacement_value, group_by, "purchase_frequency", "date", "recency", save_file)
