@@ -34,7 +34,7 @@ def process_csv(file_path, column_rename_map, column_to_replace=None, replacemen
 
             # Calculate recency (days since the transaction date)
             current_date = datetime.now()
-            df[recncy_column_name] = (current_date - df[transaction_date_column]).dt.days
+            df[recncy_column_name] = 1 / (current_date - df[transaction_date_column]).dt.days
         else:
             print(f"\nTransaction date column '{transaction_date_column}' not found in the DataFrame.")
 
