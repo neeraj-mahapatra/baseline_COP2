@@ -67,37 +67,35 @@ class Transformer:
         
         # Drop a column
         if self.column_to_drop and self.column_to_drop in df.columns:
-             df.drop(self.column_to_drop, axis=1)
+             df.drop(self.column_to_drop, axis=1, inplace=True)
 
         # Filter a column
         if self.column_to_filter and self.column_to_filter in df.columns:
-            df[df[self.column_to_filter] != self.column_to_filter_value]
+            df = df[df[self.column_to_filter] != self.column_to_filter_value]
+
     
         # Convert transaction date to datetime if provided
         if self.transaction_date_column and self.transaction_date_column in df.columns and self.reference_date != None:
             df[self.transaction_date_column] = pd.to_datetime(df[self.transaction_date_column], errors="coerce")
-            reference_date = pd.to_datetime(reference_date)
+            self.reference_date = pd.to_datetime(self.reference_date)
 
          # Validate composite_key and group_by_columns
-        if not all(col in df.columns for col in self.composite_key_columns) and not all(col in df.columns for col in self.group_by_columns):
-            print(f"Warning: One or more columns in {self.group_by_columns} not found in the DataFrame.")
+        if not all(col in df.columns for col in self.composite_key_columns_list) and not all(col in df.columns for col in self.group_by_columns_list):
+            print(f"Warning: One or more columns in {self.group_by_columns_list} not found in the DataFrame.")
             return df
             
         # Step 1: Create Composite Key column
-        df[self.composite_key_column_name] = df[self.composite_key_columns].astype(str).agg(self.composite_key_seperator.join, axis=1)
+        df[self.composite_key_column_name] = df[self.composite_key_columns_list].astype(str).agg(self.composite_key_seperator.join, axis=1)
+
 
         # Step 2: Calculate recency
-        if self.transaction_date_column in df.columns:
-            current_date = datetime.now()
-            df[self.recncy_column_name] = (current_date - df[self.transaction_date_column]).dt.days
-
         if self.reference_date == None:
             self.reference_date = datetime.now()
 
-        df[self.recncy_column_name] = (1 / (self.reference_date - df[self.transaction_date_column]) + 1).dt.days
+        df[self.recncy_column_name] = 1 / ((self.reference_date - df[self.transaction_date_column]).dt.days + 1)
 
         # Step 3: aggregation based on offer_id
-        df.groupby(self.group_by_offer_column)[[self.composite_key_column_name, self.explode_by_column, self.recncy_column_name]].agg(
+        df = df.groupby(self.group_by_offer_column)[[self.composite_key_column_name, self.explode_by_column, self.recncy_column_name]].agg(
             {
                 self.explode_by_column: lambda x: x.dropna().tolist(),
                 self.composite_key_column_name: lambda x: '|'.join(x),
@@ -107,16 +105,18 @@ class Transformer:
 
         # Step 4: explode a column
         if self.explode_by_column and self.explode_by_column in df.columns:
-            df.explode(self.explode_by_column)
+            df = df.explode(self.explode_by_column)
+
+        group_by_list = [item for item in self.group_by_columns_list if item != self.group_by_offer_column]
 
         # Step 5: Group by CODEBELISTA and Composite_key, aggregating ID_OFERTA into a list and calculating count
-        df.groupby([item for item in self.group_by_columns_list if item != self.group_by_offer_column]).agg({
+        df = df.groupby(group_by_list).agg({
             self.group_by_offer_column: lambda x: x.tolist(),  # convert ID_OFERTA to list,
             self.recncy_column_name:'mean'
         }).reset_index()
 
         # Step 6: Add frequency column
-        df[self.frequency_column_name] = df.groupby([item for item in self.group_by_columns_list if item != self.group_by_offer_column]).size().values
+        df[self.frequency_column_name] = df.groupby(group_by_list).size().values
 
         # Normalize frequency
         if self.frequency_column_name in df.columns:
@@ -125,5 +125,7 @@ class Transformer:
         # Normalize recency
         if self.recncy_column_name in df.columns:
              df[self.recncy_column_name + "_normalized"] = minmax_scale(df[self.recncy_column_name])
+
+        df.to_csv("src/data/files/processed_data.csv")
 
         return df

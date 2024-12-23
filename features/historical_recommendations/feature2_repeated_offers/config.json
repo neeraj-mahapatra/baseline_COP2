@@ -1,7 +1,7 @@
 {
     "data": {
-      "input_csv": "/Users/abhishek/Desktop/COP2.0/baseline_COP2/features/historical_recommendations/feature2_repeated_offers/src/data/files/Sample_Data_F2.csv",
-      "output_csv": "baseline_COP2/features/historical_recommendations/feature2_repeated_offers/src/data/files/Output.csv"
+      "input_csv": "src/data/files/Sample_Data_F2.csv",
+      "output_csv": "src/data/files/F2_output_data.csv"
     },
     "parameters": {
       "alpha": 0.4,
