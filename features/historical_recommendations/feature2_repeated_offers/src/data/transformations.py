@@ -18,7 +18,7 @@ class Transformer:
                  column_to_filter=None, 
                  column_to_filter_value=None,
                  group_by_columns_list=None,
-                 group_by_offer_column = "ID_OFERTA",
+                 group_by_offer_column = "offer_id",
                  explode_by_column = None,
                  frequency_column_name="frequency",
                  composite_key_column_name = "Composite_key", 
@@ -47,9 +47,10 @@ class Transformer:
         """
         Processes the DataFrame:
         1. Renames columns
-        2. Replaces null values
-        3. Aggregates daily metrics
-        4. Calculates frequency, recency, and normalizes them
+        2. Drops column
+        3. Filters column
+        4. Aggregates metrics
+        5. Calculates frequency, recency, and normalizes them
 
         Parameters
         ----------
