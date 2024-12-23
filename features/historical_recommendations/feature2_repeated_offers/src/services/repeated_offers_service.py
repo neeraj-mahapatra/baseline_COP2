@@ -6,7 +6,7 @@ from ..data.transformations import Transformer
 
 from ..models.scoring import Scorer
 
-from ..utils.variables import INPUT_CSV, PARAMS  # The default config
+from ..utils.variables import * # The default config
 
 class RepeatedOfferService:
     """
@@ -39,7 +39,7 @@ class RepeatedOfferService:
             column_to_drop = "COMPOSITE_PRIMARY_KEY",
             column_to_filter= "product_cuc", 
             column_to_filter_value= "XXXXXXXXX",
-            group_by_columns_list= ["offer_id", "Composite_key", "consultant_id", "recency"],
+            group_by_columns_list= ["offer_id", "consultant_id", "Composite_key"],
             group_by_offer_column = "offer_id",
             explode_by_column = "consultant_id",
             frequency_column_name="frequency",
@@ -66,7 +66,7 @@ class RepeatedOfferService:
         df_processed = self.transformer.process_csv(df_raw)
         df_scored = self.scorer.calculate_combined_score(df_processed)
 
-        offers = []
-        # Write the logic for handling the offers in the df_scored dataframe
+        offers = df_scored[REQUIRED_OUTPUT_FIELDS].head(self.k).values.tolist()
+        df_scored.to_csv(OUTPUT_CSV)
 
         return pd.DataFrame(offers)

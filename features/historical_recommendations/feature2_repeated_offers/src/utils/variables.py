@@ -16,7 +16,8 @@ CONFIG_PATH = os.path.join(os.path.dirname(__file__), "../../config.json")
 VARIABLES = load_config(CONFIG_PATH)
 
 # Use .get() for an extra layer of safety
-INPUT_CSV = VARIABLES.get("data", {}).get("input_csv", "default_input.csv")
+INPUT_CSV = VARIABLES.get("data", {}).get("input_csv", "input_data.csv")
 OUTPUT_CSV = VARIABLES.get("data", {}).get("output_csv", "default_output.csv")
 PARAMS = VARIABLES.get("parameters", {})
 LOGGING_CONFIG = VARIABLES.get("logging", {})
+REQUIRED_OUTPUT_FIELDS = ['consultant_id', 'frequency_normalized', 'recency_normalized', 'score', 'Composite_key']
