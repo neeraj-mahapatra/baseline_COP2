@@ -1,0 +1,15 @@
+# Ignore Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore IDE/editor settings
+*.idea/
+*.vscode/
+
+
+.DS_Store
