@@ -7,7 +7,6 @@
 #            "gamma": 0.7,
 #            "delta": 0.3,
 #            "theta": 1.1,
-#            "C_max": 120.0,
 #            "k": 5,
 #            "n_categories": 2,
 #            "num_bundles": 4
@@ -16,8 +15,8 @@
 
 
 from flask import Flask, request, jsonify
-from src.services.recommendation_service import RecommendationService
-from src.utils.variables import VARIABLES
+from feature1_favorites.src.services.recommendation_service import RecommendationService
+from feature1_favorites.src.utils.variables import VARIABLES
 
 app = Flask(__name__)
 
@@ -40,7 +39,6 @@ def recommend():
     #   "gamma": 0.8,
     #   "delta": 0.2,
     #   "theta": 1.1,
-    #   "C_max": 120.0,
     #   "k": 5,
     #   "n_categories": 2,
     #   "num_bundles": 3
@@ -54,7 +52,7 @@ def recommend():
     config_params["gamma"] = body.get("gamma", config_params["gamma"])
     config_params["delta"] = body.get("delta", config_params["delta"])
     config_params["theta"] = body.get("theta", config_params["theta"])
-    config_params["C_max"] = body.get("C_max", config_params["C_max"])
+    # config_params["C_max"] = body.get("C_max", config_params["C_max"])
     config_params["k"] = body.get("k", config_params["k"])
     config_params["n_categories"] = body.get("n_categories", config_params["n_categories"])
     config_params["num_bundles"] = body.get("num_bundles", config_params["num_bundles"])

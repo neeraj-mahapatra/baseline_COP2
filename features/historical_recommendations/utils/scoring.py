@@ -4,7 +4,7 @@
 Module providing scoring computations, e.g., combined frequency/recency scoring.
 """
 
-from ..utils.normalization import normalize
+from .normalization import normalize
 
 class Scorer:
     """

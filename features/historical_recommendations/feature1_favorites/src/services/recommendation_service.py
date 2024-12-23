@@ -3,10 +3,10 @@
 import pandas as pd
 from ..data.io import DataIO
 from ..data.transformations import Transformer
-from ..models.bundling import BundleBuilder
-from ..models.scoring import Scorer
-from ..models.selection import Selector
-from ..utils.variables import INPUT_CSV, OUTPUT_CSV, PARAMS  # The default config
+from utils.bundling import BundleBuilder
+from utils.scoring import Scorer
+from utils.selection import Selector
+from ..utils.variables import INPUT_CSV, INTERMEDIATE_CSV, OUTPUT_CSV, PARAMS  # The default config
 
 class RecommendationService:
     """
@@ -68,6 +68,7 @@ class RecommendationService:
         """
         df_raw = self.data_io.read_data_from_csv(INPUT_CSV)
         df_processed = self.transformer.process_csv(df_raw)
+        df_processed.to_csv(INTERMEDIATE_CSV, index=False)
         df_scored = self.scorer.calculate_combined_score(df_processed)
 
         bundles = []
