@@ -66,7 +66,8 @@ class RepeatedOfferService:
         df_processed = self.transformer.process_csv(df_raw)
         df_scored = self.scorer.calculate_combined_score(df_processed)
 
-        offers = []
+        required_fields = ['consultant_id', 'frequency_normalized', 'recency_normalized', 'score', 'Composite_key']
+        offers = df_scored[required_fields].head(self.k).values.tolist()
         # Write the logic for handling the offers in the df_scored dataframe
 
         return pd.DataFrame(offers)

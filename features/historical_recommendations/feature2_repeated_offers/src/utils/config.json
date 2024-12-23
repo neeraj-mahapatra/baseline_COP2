@@ -1,0 +1,15 @@
+{
+    "data": {
+      "input_csv": "baseline_COP2/features/historical_recommendations/feature2_repeated_offers/src/data/files/Sample_Data_F2.csv",
+      "output_csv": "baseline_COP2/features/historical_recommendations/feature2_repeated_offers/src/data/files/Output.csv"
+    },
+    "parameters": {
+      "alpha": 0.4,
+      "beta": 0.6,
+      "k": 3,
+      "composite_key_separator": "|"
+    },
+    "logging": {
+      "level": "INFO"
+    }
+  }

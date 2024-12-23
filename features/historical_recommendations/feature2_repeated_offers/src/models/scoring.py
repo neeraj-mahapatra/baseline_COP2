@@ -34,7 +34,7 @@ class Scorer:
         df = df.copy()
 
         # Calculate the combined score using the pre-normalized columns
-        df['score'] = (self.alpha * df['normalized_recency']) + (self.beta * df['normalized_count'])
+        df['score'] = (self.alpha * df['recency_normalized']) + (self.beta * df['frequency_normalized'])
 
         # Sort by the score in descending order
         df = df.sort_values('score', ascending=False).reset_index(drop=True)
