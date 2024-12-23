@@ -15,7 +15,7 @@
 
 
 from flask import Flask, request, jsonify
-from feature1_favorites.src.services.recommendation_service import RecommendationService
+from feature1_favorites.src.services.favorite_service import FavoriteService
 from feature1_favorites.src.utils.variables import VARIABLES
 
 app = Flask(__name__)
@@ -62,9 +62,9 @@ def recommend():
     try:
         # Now that config_params is updated, pass it into your 
         # RecommendationService or wherever needed.
-        recommendation_service = RecommendationService(custom_params=config_params)
+        favorite_service = FavoriteService(custom_params=config_params)
         
-        df_bundles = recommendation_service.run_recommendation()
+        df_bundles = favorite_service.run_recommendation()
         
         return jsonify({
             "status": "success",

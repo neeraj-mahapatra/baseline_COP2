@@ -1,4 +1,4 @@
-# src/services/recommendation_service.py
+# src/services/favorite_service.py
 
 import pandas as pd
 from ..data.io import DataIO
@@ -8,7 +8,7 @@ from utils.scoring import Scorer
 from utils.selection import Selector
 from ..utils.variables import INPUT_CSV, INTERMEDIATE_CSV, OUTPUT_CSV, PARAMS  # The default config
 
-class RecommendationService:
+class FavoriteService:
     """
     Main service that coordinates the recommendation pipeline.
     """

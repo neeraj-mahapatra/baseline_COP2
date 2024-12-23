@@ -1,4 +1,4 @@
-from src.services.recommendation_service import RecommendationService
+from src.services.favorite_service import RecommendationService
 
 def main():
     service = RecommendationService()
