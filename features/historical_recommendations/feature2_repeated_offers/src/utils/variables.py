@@ -17,6 +17,8 @@ VARIABLES = load_config(CONFIG_PATH)
 
 # Use .get() for an extra layer of safety
 INPUT_CSV = VARIABLES.get("data", {}).get("input_csv", "input_data.csv")
+PROCESSED_CSV = VARIABLES.get("data", {}).get("processed_data", "processed_data.csv")
+FUTURE_CSV = VARIABLES.get("data", {}).get("future_campaign_data", "future_campaign_data.csv")
 OUTPUT_CSV = VARIABLES.get("data", {}).get("output_csv", "default_output.csv")
 PARAMS = VARIABLES.get("parameters", {})
 LOGGING_CONFIG = VARIABLES.get("logging", {})

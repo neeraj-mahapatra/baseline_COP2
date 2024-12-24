@@ -1,6 +1,8 @@
 {
     "data": {
       "input_csv": "src/data/files/Sample_Data_F2.csv",
+      "processed_data": "src/data/files/processed_data.csv",
+      "future_campaign_data": "src/data/files/F2_Future_Campaign_Data_PE.csv",
       "output_csv": "src/data/files/F2_output_data.csv"
     },
     "parameters": {

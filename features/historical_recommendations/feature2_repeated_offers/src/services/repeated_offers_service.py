@@ -23,7 +23,7 @@ class RepeatedOfferService:
         merged_params = {**PARAMS, **(custom_params or {})}
 
         self.transformer = Transformer(
-            column_rename_map={
+            previous_data_rename_map={
                 "DES_TIPO_SUBESTRATEGIA": "sub_stratergy",
                 "DES_TIPO_GRUPO": "group_type",
                 "CODCUC": "product_cuc",
@@ -32,21 +32,33 @@ class RepeatedOfferService:
                 "FACTOR_REPETICION": "factor_repetition",
                 "CODEBELISTA": "consultant_id",
                 "FECHAPROCESO": "date",
-                "ID_OFERTA": "offer_id"
+                "ID_OFERTA": "offer_id",
+                "ANIOCAMPANA": "campaign_id"
+            },
+            future_data_rename_map = {
+                "DES_TIPO_SUBESTRATEGIA": "sub_stratergy",
+                "DES_TIPO_GRUPO": "group_type",
+                "CODCUC": "product_cuc",
+                "ES_PADRE": "is_father",
+                "ES_GRATIS": "is_free",
+                "FACTOR_REPETICION": "factor_repetition",
+                "ID_OFERTA": "offer_id",
+                "COD_PERIODO": "campaign_id"
             },
             composite_key_columns_list=["sub_stratergy","group_type","product_cuc","is_father","is_free","factor_repetition"],
             composite_key_seperator = '|', 
             column_to_drop = "COMPOSITE_PRIMARY_KEY",
             column_to_filter= "product_cuc", 
             column_to_filter_value= "XXXXXXXXX",
-            group_by_columns_list= ["offer_id", "consultant_id", "Composite_key"],
+            group_by_columns_list= ["offer_id", "Composite_key", "consultant_id", "recency"],
             group_by_offer_column = "offer_id",
             explode_by_column = "consultant_id",
             frequency_column_name="frequency",
             composite_key_column_name = "Composite_key", 
             transaction_date_column= "date",
             reference_date = "2024-12-29",
-            recncy_column_name="recency")
+            recncy_column_name="recency",
+            campaign_column_name="campaign_id")
 
         self.scorer = Scorer(
             alpha=merged_params["alpha"],
@@ -63,10 +75,11 @@ class RepeatedOfferService:
         Runs the full repeated offers pipeline and returns a DataFrame of offers.
         """
         df_raw = self.data_io.read_data_from_csv(INPUT_CSV)
-        df_processed = self.transformer.process_csv(df_raw)
+        df_future = self.data_io.read_data_from_csv(FUTURE_CSV)
+        df_processed = self.transformer.process_csv(df_raw, df_future)
         df_scored = self.scorer.calculate_combined_score(df_processed)
 
         offers = df_scored[REQUIRED_OUTPUT_FIELDS].head(self.k).values.tolist()
-        df_scored.to_csv(OUTPUT_CSV)
+        df_scored.to_csv(OUTPUT_CSV, index=False)
 
         return pd.DataFrame(offers)
