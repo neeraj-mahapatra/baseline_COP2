@@ -1,0 +1,23 @@
+{
+    "data": {
+      "input_csv": "/Users/mindstix/Desktop/baseline_COP2/features/historical_recommendations/feature1_favorites/src/data/files/sample_data_1000_C.csv",
+      "intermediate_csv": "/Users/mindstix/Desktop/baseline_COP2/features/historical_recommendations/feature1_favorites/src/data/files/processed_data_1000_C.csv",
+      "output_csv": "/Users/mindstix/Desktop/baseline_COP2/features/historical_recommendations/feature1_favorites/src/data/files/bundles_data_1000_C.csv"
+    },
+    "parameters": {
+      "alpha": 0.4,
+      "beta": 0.6,
+      "gamma": 0.6,
+      "delta": 0.4,
+      "theta": 1.0,
+      "C_max": 100.0,
+      "k": 3,
+      "n_categories": 1,
+      "purchasing_power": 100.0,
+      "num_bundles": 2
+    },
+    "logging": {
+      "level": "INFO"
+    }
+  }
+  
