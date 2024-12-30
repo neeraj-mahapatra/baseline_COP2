@@ -50,7 +50,7 @@ class RepeatedOfferService:
             column_to_drop = "COMPOSITE_PRIMARY_KEY",
             column_to_filter= "product_cuc", 
             column_to_filter_value= "XXXXXXXXX",
-            group_by_columns_list= ["offer_id", "Composite_key", "consultant_id", "recency"],
+            group_by_columns_list= ["offer_id", "Composite_key", "consultant_id"],
             group_by_offer_column = "offer_id",
             explode_by_column = "consultant_id",
             frequency_column_name="frequency",

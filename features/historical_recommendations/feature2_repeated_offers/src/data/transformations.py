@@ -79,18 +79,23 @@ class Transformer:
 
         # Filter a column
         if self.column_to_filter and self.column_to_filter in df.columns and self.column_to_filter in df_future.columns:
-            df = df[df[self.column_to_filter] != self.column_to_filter_value]
-            df_future = df_future[df_future[self.column_to_filter] != self.column_to_filter_value]
+            # Get all ID_OFERTAs that have CODCUC as 'XXXXXXXXX'
+            offer_ids_to_filter_in_df = df[df[self.column_to_filter] == self.column_to_filter_value][self.group_by_offer_column].unique()
+            offer_ids_to_filter_in_df_future = df[df[self.column_to_filter] == self.column_to_filter_value][self.group_by_offer_column].unique()
+
+            # Filter out all rows with these ID_OFERTAs
+            df = df[~df[self.group_by_offer_column].isin(offer_ids_to_filter_in_df)]
+            df_future = df_future[~df_future[self.group_by_offer_column].isin(offer_ids_to_filter_in_df_future)]
 
     
         # Convert transaction date to datetime if provided
         if self.transaction_date_column and self.transaction_date_column in df.columns and self.reference_date != None:
             df[self.transaction_date_column] = pd.to_datetime(df[self.transaction_date_column], errors="coerce")
-            reference_date = pd.to_datetime(reference_date)
+            self.reference_date = pd.to_datetime(self.reference_date)
 
          # Validate composite_key and group_by_columns
-        if not all(col in df.columns for col in self.composite_key_columns) and not all(col in df.columns for col in self.group_by_columns):
-            print(f"Warning: One or more columns in {self.group_by_columns} not found in the DataFrame.")
+        if not all(col in df.columns for col in self.composite_key_columns_list) and not all(col in df.columns for col in self.group_by_columns_list):
+            print(f"Warning: One or more columns in {self.group_by_columns_list} not found in the DataFrame.")
             return df
         
         dfs = {campaign_id: df_subset for campaign_id, df_subset in df.groupby(self.campaign_column_name)}
@@ -101,7 +106,6 @@ class Transformer:
             # Step 1: Create Composite Key column
             sub_df[self.composite_key_column_name] = sub_df[self.composite_key_columns_list].astype(str).agg(self.composite_key_seperator.join, axis=1)
             
-
             # Step 2: Calculate recency
             if self.reference_date == None:
                 self.reference_date = datetime.now()
@@ -126,9 +130,9 @@ class Transformer:
             # Step 5: Group by CODEBELISTA and Composite_key, aggregating ID_OFERTA into a list and calculating count
             sub_df = sub_df.groupby(group_by_list).agg({
                 self.group_by_offer_column: lambda x: x.tolist(),  # convert ID_OFERTA to list,
-                self.recncy_column_name:'mean'
+                self.recncy_column_name: 'mean'
             }).reset_index()
-            
+
             # Step 6: Add frequency column
             sub_df[self.frequency_column_name] = sub_df.groupby(group_by_list).size().values
 
